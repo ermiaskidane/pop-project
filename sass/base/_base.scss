@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+
+  font-size: 62.5%;
+}
+
+body{
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #fff;
+
+  box-sizing: border-box;
+  padding: 0 2rem 2rem 2rem;
+  background-color: #17181b;
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    // grid-template-columns: [full-start] minmax(8rem, 1fr) [center-start]
+    //                     repeat(8, [col-start] minmax(min-content, 15rem) [col-end])
+    //                     [center-end]  minmax(8rem, 1fr) [full-end] ;
+}

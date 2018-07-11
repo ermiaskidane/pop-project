@@ -1,0 +1,11 @@
+{
+  "name": "huddersfield_mission",
+  "version": "1.0.0",
+  "description": "static page for huddersfield_mission",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "ermias",
+  "license": "ISC"
+}
