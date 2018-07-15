@@ -28,7 +28,4 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    // grid-template-columns: [full-start] minmax(8rem, 1fr) [center-start]
-    //                     repeat(8, [col-start] minmax(min-content, 15rem) [col-end])
-    //                     [center-end]  minmax(8rem, 1fr) [full-end] ;
 }
