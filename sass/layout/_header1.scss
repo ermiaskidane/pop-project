@@ -81,5 +81,8 @@
      height: 2.6rem;
      // padding: 0 .8rem;
    }
+    &--icon:hover{
+     fill: $color-blue-light-1;
+   }
  }
 }
