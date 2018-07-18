@@ -10,33 +10,47 @@
 
   </head>
   <body>
+    <!-- {% block content %} -->
     <div class="container">
       <header class="header">
         <div class="header__items header__items--1">
+          <!-- <h1>hello</h1> -->
           <h3 class="header__items--pop">Popcorn Time</h3>
-          <p>&nbsp;a</p>
-          <p>&nbsp;b</p>
-          <p>&nbsp;c</p>
+
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-minus"></use>
+          </svg>
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-document-landscape"></use>
+          </svg>
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
         </div>
 
         <div class="header__items header__items--2">
           <ul class="header__list--1">
             <li class="header__list--item ">
-                <a href="#" class="header__list--link">Movies</a>
+                <a href="index.html" class="header__list--link">Movies</a>
             </li>
             <li class="header__list--item ">
-                <a href="#" class="header__list--link">Series</a>
+                <a href="tv.html" class="header__list--link">Series</a>
             </li>
             <li class="header__list--item "><a href="#" class="header__list--link">anime</a></li>
             <li class="header__list--item "><a href="#" class="header__list--link">indie</a></li>
-            <li class="header__list--item "><a href="#" class="header__list--link">genre <span>all</span></a></li>
-            <li class="header__list--item "><a href="#" class="header__list--link">sortby <span>Trending</span></a></li>
+            <li class="header__list--item "><p href="#" class="header__list--link">genre <a href="#popup-genre" class="ancher"> <span>all</span> </a></p></li>
+            <li class="header__list--item "><p href="#list-sortby" class="header__list--link">sortby <a href="#list-sortby"> <span>Trending</span> </a></p></li>
             <!-- <li class="header__list--item header__list--item--7"><a href="#" class="header__link">anime</a></li> -->
           </ul>
 
           <ul class="header__list--2">
             <li>
-              <svg class="header__list--icon">
+              <form action="#" class="header__list--form">
+                <input type="text" class="header__list--input" name="text" placeholder="search">
+              </form>
+            </li>
+            <li>
+              <svg class="header__list--icon header__list--icon--1">
                 <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
               </svg>
             </li>
@@ -67,7 +81,7 @@
             </li>
             <li>
               <svg class="header__list--icon">
-                <use xlink:href="img/sprite.svg#icon-cog"></use>
+                <a href="setting.html"><use xlink:href="img/sprite.svg#icon-cog"></use></a>
               </svg>
             </li>
           </ul>
@@ -75,10 +89,12 @@
 
       </header>
 
+<!-- <template id="mytemplate"> -->   <!--MAKE OVERLAP EACH OTHER  -->
       <main>
+        <template id="mytemplate">
         <figure class="figure figure--1">
-          <img src="img/mov-1.jpg" alt="mov-1" class="figure__movie">
-          <p>7.7/10</p>
+          <img src="" alt="mov-1" class="figure__movie">
+          <p></p>
           <svg class="figure__icon--1">
             <use xlink:href="img/sprite.svg#icon-heart"></use>
           </svg>
@@ -105,587 +121,65 @@
           </div>
 
           <figcaption class="figure__caption">
-                <h3>Ready Player one</h3>
-                <p>2018</p>
+                <h3></h3>
+                <p></p>
           </figcaption>
         </figure>
-
-        <figure class="figure figure--2">
-          <img src="img/mov-2.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.9/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Ready Player one</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--3">
-          <img src="img/mov-3.jpg" alt="mov-1" class="figure__movie">
-
-          <p>6.8/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Ready Player one</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--4">
-          <img src="img/mov-4.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.7/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Star Trek</h3>
-                <p>2016</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--5">
-          <img src="img/mov-5.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.5/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Ready Player one</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--6">
-          <img src="img/mov-6.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.0/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Ready Player one</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--7">
-          <img src="img/mov-7.jpg" alt="mov-1" class="figure__movie">
-
-          <p>9.2/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Gladiator</h3>
-                <p>2002</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--8">
-          <img src="img/mov-8.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.5/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Jurassic world</h3>
-                <p>2015</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--9">
-          <img src="img/mov-9.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.6/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Rampage</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--10">
-          <img src="img/mov-10.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.7/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Star war</h3>
-                <p>2016</p>
-          </figcaption>
-        </figure>
-
-        <figure class="figure figure--11">
-          <img src="img/mov-11.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.4/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Trolls</h3>
-                <p>2016</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--12">
-          <img src="img/mov-12.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.8/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Fast and furious</h3>
-                <p>2015</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--13">
-          <img src="img/mov-13.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.1/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>I feel pretty</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--14">
-          <img src="img/mov-14.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.3/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Iron man</h3>
-                <p>2016</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--15">
-          <img src="img/mov-15.jpg" alt="mov-1" class="figure__movie">
-
-          <p>8.6/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Black panther</h3>
-                <p>2018</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--16">
-          <img src="img/mov-16.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.8/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>American Black widow winter soldier</h3>
-                <p>2015</p>
-          </figcaption>
-        </figure>
-
-
-        <figure class="figure figure--17">
-          <img src="img/mov-17.jpg" alt="mov-1" class="figure__movie">
-
-          <p>7.9/10</p>
-          <svg class="figure__icon--1">
-            <use xlink:href="img/sprite.svg#icon-heart"></use>
-          </svg>
-          <svg class="figure__icon--2">
-            <use xlink:href="img/sprite.svg#icon-eye"></use>
-          </svg>
-
-          <div class="figure__star">
-            <svg class="figure__star--1">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--2">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--3">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--4">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="figure__star--5">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <figcaption class="figure__caption">
-                <h3>Now you see me</h3>
-                <p>2015</p>
-          </figcaption>
-        </figure>
-
+</template>
       </main>
 
+
+
+
+      <!-- THIS ONE IS FOR THE POP UP OF LINK GENRE AND SORTBY -->
+
+      <div class="popup" id="popup-genre">
+        <ul class="popup__genre">
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">All</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Action</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Adventure</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Animation</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Biography</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Comedy</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Crime</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Documentry</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Family</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Fantasy</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Film & Noir</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">History</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Horror</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Music</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Musical</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Mystery</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Romance</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Sci-fic</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Short</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Sport</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Triller</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">War</a></li>
+          <li class="popup__genre--list"><a href="#" class="popup__genre--link">Western</a></li>
+        </ul>
+      </div>
+
+
+      <div class="sortby" id="list-sortby">
+        <ul class="sortby__items">
+          <li class="sortby__items--list"><a href="#" class="sortby__items--link">Trending</a></li>
+          <li class="sortby__items--list"><a href="#" class="sortby__items--link">Popularity</a></li>
+          <li class="sortby__items--list"><a href="#" class="sortby__items--link">Last added</a></li>
+          <li class="sortby__items--list"><a href="#" class="sortby__items--link">Years</a></li>
+          <li class="sortby__items--list"><a href="#" class="sortby__items--link">Title</a></li>
+          <li class="sortby__items--list"><a href="#" class="sortby__items--link">Rating</a></li>
+        </ul>
+      </div>
+
+
     </div>
+    
+    <!-- {% endblock content %} -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/main2.js"></script>
   </body>
 </html>

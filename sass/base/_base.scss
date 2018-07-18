@@ -19,15 +19,15 @@ body{
 
   box-sizing: border-box;
   padding: 0 2rem 2rem 2rem;
-  background-color: #17181b;
+  background-color: $color-primary-dark-1;
 }
-
+ 
 // font-family: 'Lato', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 
 .container{
     display: grid;
-    grid-template-rows: min-content repeat(5, minmax(15rem, 20rem));
+    // grid-template-rows: min-content repeat(5, minmax(15rem, 20rem));
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     // grid-template-columns: [full-start] minmax(8rem, 1fr) [center-start]
     //                     repeat(8, [col-start] minmax(min-content, 15rem) [col-end])

@@ -1,7 +1,12 @@
-
 .header{
   grid-row: 1/ span 1;
   grid-column: 1 /-1;
+
+  position: fixed;
+  z-index: 10;
+  width: 98%;
+  background-color: $color-primary-dark-1;
+  padding-bottom: .7rem;
 
   display: flex;
   flex-direction: column;
@@ -21,9 +26,18 @@
      padding-left: 45vw;
      flex: 1;
    }
-
+ // header__items--icon
    &--1 > *:not(:first-child){
      padding-left: 1rem;
+     width: 2.4rem;
+     height: 2.4rem;
+     fill: $color-grey-dark-1;
+     margin-top: -1.1rem;
+
+   }
+   &--1 > *:last-child{
+     width: 2.8rem;
+     height: 2.8rem;
    }
   //  header__items--2
    &--2{
@@ -36,12 +50,12 @@
    &--1{
      list-style: none;
      flex: 1;
-     padding-right: 35vw;
+     padding-right: 38vw;
 
      display: flex;
      justify-content: space-between;
      font-size: 1.7rem;
-
+     font-weight: 400;
 
    }
    &--item{
@@ -54,20 +68,53 @@
   &--link{
     text-decoration: none;
     color: $color-white-light;
+    cursor: pointer;
+
+    & span{
+      display: inline-block;
+      color: $color-blue-light-1;
+      padding-left: .8rem;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+    }
   }
-   &--2{
-     list-style: none;
-     margin-left: auto;
 
-     display: flex;
-     justify-content: space-between;
+ &--2{
+   list-style: none;
+   margin-left: auto;
 
-     & li:not(:last-child){
-       padding: 0 .4rem;
-     }
+   display: flex;
+   justify-content: space-between;
+
+   & li:not(:last-child){
+     padding: 0 .4rem;
    }
+ }
+
+ &--input{
+   background-color: $color-grey-dark-3;
+   border: 0;
+   border-radius: 3px;
+   height: 1.8rem;
+   padding-left: .5rem;
+   position: fixed;
+   // top: 0%;
+   right: 16.5%;
 
 
+   // opacity: 0;
+   // visibility: hidden;
+ }
+
+  // &--icon:nth-child(1n):hover .header__list--form{
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
+
+
+
+
+// header list icon
    &--icon{
      fill: $color-grey-dark-1;
      width: 2.2rem;
@@ -75,8 +122,16 @@
      cursor: pointer;
      transition: all .2s;
    }
+   // &--icon--1{
+   //   fill: red;
+   // }
    &--icon:hover{
      fill: $color-blue-light-1;
    }
+
+   // &--icon--1:hover .header__list--input{
+   //   opacity: 1;
+   //   visibility: visible;
+   // }
  }
 }
