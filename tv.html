@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__items header__items--1">
+          <!-- <h1>hello</h1> -->
+          <h3 class="header__items--pop">Popcorn Time</h3>
+
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-minus"></use>
+          </svg>
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-document-landscape"></use>
+          </svg>
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </div>
+
+        <div class="header__items header__items--2">
+          <ul class="header__list--1">
+            <li class="header__list--item ">
+                <a href="index.html" class="header__list--link">Movies</a>
+            </li>
+            <li class="header__list--item ">
+                <a href="tv.html" class="header__list--link">Series</a>
+            </li>
+            <li class="header__list--item "><a href="#" class="header__list--link">anime</a></li>
+            <li class="header__list--item "><a href="#" class="header__list--link">indie</a></li>
+            <li class="header__list--item "><p href="#" class="header__list--link">genre <a href="#popup-genre" class="ancher"> <span>all</span> </a></p></li>
+            <li class="header__list--item "><p href="#list-sortby" class="header__list--link">sortby <a href="#list-sortby"> <span>Trending</span> </a></p></li>
+            <!-- <li class="header__list--item header__list--item--7"><a href="#" class="header__link">anime</a></li> -->
+          </ul>
+
+          <ul class="header__list--2">
+            <li>
+              <form action="#" class="header__list--form">
+                <input type="text" class="header__list--input" name="text" placeholder="search">
+              </form>
+            </li>
+            <li>
+              <svg class="header__list--icon header__list--icon--1">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="header__list--icon">
+                <use xlink:href="img/sprite.svg#icon-shuffle"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="header__list--icon">
+                <use xlink:href="img/sprite.svg#icon-inbox"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="header__list--icon">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="header__list--icon">
+                <use xlink:href="img/sprite.svg#icon-folder"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="header__list--icon">
+                <use xlink:href="img/sprite.svg#icon-info-with-circle"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="header__list--icon">
+                <use xlink:href="img/sprite.svg#icon-cog"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+      </header>
+
+  <main>
+    <template id="mytemplate2">
+      <figure class="figure figure--1">
+        <img src="" alt="mov-1" class="figure__movie">
+        <p class="rate"></p>
+        <svg class="figure__icon--1">
+          <use xlink:href="img/sprite.svg#icon-heart"></use>
+        </svg>
+        <svg class="figure__icon--2">
+          <use xlink:href="img/sprite.svg#icon-eye"></use>
+        </svg>
+
+        <div class="figure__star">
+          <svg class="figure__star--1">
+            <use xlink:href="img/sprite.svg#icon-star"></use>
+          </svg>
+          <svg class="figure__star--2">
+            <use xlink:href="img/sprite.svg#icon-star"></use>
+          </svg>
+          <svg class="figure__star--3">
+            <use xlink:href="img/sprite.svg#icon-star"></use>
+          </svg>
+          <svg class="figure__star--4">
+            <use xlink:href="img/sprite.svg#icon-star"></use>
+          </svg>
+          <svg class="figure__star--5">
+            <use xlink:href="img/sprite.svg#icon-star"></use>
+          </svg>
+        </div>
+
+        <figcaption class="figure__caption">
+              <h3 class="h3"></h3>
+              <p class="year"></p>
+        </figcaption>
+      </figure>
+ </template>
+    <!-- <figure id="parent"></figure> -->
+  </main>
+  </div>
+
+
+  <!-- <script src="js/main.js"></script> -->  <!--  LOOK IN FOR MOVING CONTENT ON THIS JS FILE  -->
+  <script src="js/main3.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
