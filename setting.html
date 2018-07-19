@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Time</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="header">
+        <div class="header__items header__items--1">
+          <!-- <h1>hello</h1> -->
+          <h3 class="header__items--pop">Popcorn Time</h3>
+
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-minus"></use>
+          </svg>
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-document-landscape"></use>
+          </svg>
+          <svg class="header__items--icon">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </div>
+      </header>
+
+    <section>
+
+      <div class="user">
+
+        <h1 class="user__settings">Settings</h1>
+        <h3 class="user__interface">User interface</h3>
+        <div class="user__content">
+          <div class="user__content--1">
+              <svg class="user__content--icon">
+                <use xlink:href="img/sprite.svg#icon-keyboard"></use>
+              </svg>
+              <svg class="user__content--icon">
+                <use xlink:href="img/sprite.svg#icon-help-with-circle"></use>
+              </svg>
+
+              <!-- <div class="user__content--checkboxone"> -->
+                <input type="checkbox" class="user__content--checkbox" id="checkbox-st" checked>
+                <label for="checkbox-st">show advanced settings</label>
+            <!-- </div> -->
+            <svg class="user__content--iconclose">
+              <a href="index.html"><use xlink:href="img/sprite.svg#icon-cross"></use></a>
+            </svg>
+
+          </div>
+
+          <div class="user__content--2">
+              <label for="En">Default Language</label>
+              <select name="selected-language" id="En">
+                <option value="english" selected>english</option>
+                <option value="franch" >franch</option>
+                <option value="dutch" >dutch</option>
+              </select>
+
+              <label for="th">Theme</label>
+              <select name="selected-theme" id="th">
+                <option value="offical-dark" selected>offical-dark</option>
+                <option value="offical-light">offical-light</option>
+                <option value="offical-flax">offical-flax</option>
+              </select>
+
+              <label for="st">Start Screen</label>
+              <select name="selected-screen" id="st" class="select__screen">
+                <option value="Movies" selected>Movies</option>
+                <option value="Tv-series">Tv-series</option>
+                <option value="anime">anime</option>
+              </select>
+
+              <input type="checkbox" class="user__content--checkbox2" id="translate-synopsis" checked>
+              <label for="translate-synopsis" class="user__content--label2">translate synopsis</label>
+
+              <input type="checkbox" class="user__content--checkbox3" id="shw-rtng" checked>
+              <label for="shw-rtng" class="user__content--label3">show rating over covers</label>
+
+              <input type="checkbox" class="user__content--checkbox4" id="alwy-tp">
+              <label for="alwy-tp" class="user__content--label4">always on top</label>
+
+              <input type="checkbox" class="user__content--checkbox5" id="rmmbr-fltrs">
+              <label for="rmmbr-fltrs" class="user__content--label5">remember filters</label>
+
+              <label for="wi" class="user__content--label6" >Watch Items</label>
+              <select name="selected-items" id="wi">
+                <option value="fade" selected>fade</option>
+                <option value="show">show</option>
+                <option value="hide">hide</option>
+              </select>
+
+          </div>
+
+        </div>
+
+        <h1 class="user__subtitles">Subtitles</h1>
+        <div class="user__subtitles--content">
+
+            <label for="disabled">Default subtitle</label>
+            <select name="select-subtitle" id="disabled">
+              <option value="disabled" selected>Disabled</option>
+              <option value="english">english</option>
+              <option value="francias">francias</option>
+              <option value="deutsch">deutsch</option>
+              <option value="italiano">italiano</option>
+            </select>
+
+            <label for="Arial">Fonts</label>
+            <select name="select-font" id="Arial">
+              <option value="Arial" selected>Arial</option>
+              <option value="Arial">Georgia</option>
+              <option value="Arial">PT Sans</option>
+              <option value="Arial">Tahoma</option>
+            </select>
+
+            <label for="Outline">Decoration</label>
+            <select name="select-decoration" id="Outline">
+              <option value="Outline" selected>Outline</option>
+              <option value="None">None</option>
+              <option value="op-background">opaque background</option>
+              <option value="see-th">see through background</option>
+            </select>
+
+            <label for="first">Size</label>
+            <select name="select-decoration" id="first">
+              <option value="first" selected>28px</option>
+              <option value="second">32px</option>
+              <option value="thrid">36px</option>
+              <option value="fourth">40px</option>
+            </select>
+
+            <label for="white">color</label>
+            <select name="select-decoration" id="white">
+              <option value="white" selected>white</option>
+              <option value="black">black</option>
+              <option value="oramge">orange</option>
+              <option value="green">green</option>
+            </select>
+
+            <input type="checkbox" class="user__subtitles--checkbox1" id="bold">
+            <label for="bold" class="user__subtitles--label1">bold</label>
+        </div>
+      </div>
+
+    </section>
+    </div>
+  </body>
+</html>

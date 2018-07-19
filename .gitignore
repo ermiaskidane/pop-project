@@ -4,6 +4,5 @@ templatejson.html
 template.html
 js/main.js
 js/scripts.js
-setting.html
 sass/layout/_section.scss
 sass/layout/_user.scss
