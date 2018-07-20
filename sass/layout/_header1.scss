@@ -11,6 +11,10 @@
   display: flex;
   flex-direction: column;
 
+  @include respond(tab-land){
+    padding-right: .6rem;
+  }
+
  &__items{
    &--1{
      display: flex;
@@ -56,7 +60,11 @@
      justify-content: space-between;
      font-size: 1.7rem;
      font-weight: 400;
-
+    // to compensate the distorted  positioning or distance by
+    // list items of genre and  sortby
+     @include respond(tab-land){
+       padding-right: 52vw;
+     }
    }
    &--item{
       &:hover .header__list--link{
@@ -86,11 +94,51 @@
    display: flex;
    justify-content: space-between;
 
+   @include respond(tab-land){
+     display: flex;
+     flex-direction: column;
+     background-color:  $color-white-light;
+
+     position: absolute;
+     top: 8rem;
+     right: 0rem;
+     border-radius: 3px;
+     margin-right: .6rem;
+
+   }
+  // postioning the magnifyer glass within the search button
+   & li:nth-child(2){
+     @include respond(tab-land){
+       position: absolute;
+       top: 2%;
+       right: 4%;
+     }
+   }
    & li:not(:last-child){
      padding: 0 .4rem;
    }
- }
 
+   // & li:last-child{
+   //   display: none;
+   //
+   //   @include respond(tab-land){
+   //     display: inline-block;
+   //     padding: 0 .4rem;
+   //   }
+   // }
+   // move down the search button for breath
+   & li:first-child{
+     @include respond(tab-land){
+       padding-top: 0.4rem;
+     }
+   }
+ }
+ &--link2{
+   display: none;
+   @include respond(tab-land){
+     display: block;
+   }
+ }
  &--input{
    background-color: $color-grey-dark-3;
    border: 0;
@@ -99,19 +147,16 @@
    padding-left: .5rem;
    position: fixed;
    // top: 0%;
-   right: 16.5%;
-
+   // right: 16.5%;
+   right: 17.5%;
 
    // opacity: 0;
    // visibility: hidden;
+  @include respond(tab-land){
+    position: static;    //  for better style combine with the svg icons
+    height: 2rem;
+  }
  }
-
-  // &--icon:nth-child(1n):hover .header__list--form{
-  //   opacity: 1;
-  //   visibility: visible;
-  // }
-
-
 
 
 // header list icon
@@ -122,16 +167,8 @@
      cursor: pointer;
      transition: all .2s;
    }
-   // &--icon--1{
-   //   fill: red;
-   // }
    &--icon:hover{
      fill: $color-blue-light-1;
    }
-
-   // &--icon--1:hover .header__list--input{
-   //   opacity: 1;
-   //   visibility: visible;
-   // }
  }
 }
