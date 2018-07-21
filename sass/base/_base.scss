@@ -9,6 +9,9 @@
 html{
 
   font-size: 62.5%;
+  @include respond(tab-land){
+    font-size: 50%;
+  }
 }
 
 body{
@@ -20,8 +23,12 @@ body{
   box-sizing: border-box;
   padding: 0 2rem 2rem 2rem;
   background-color: $color-primary-dark-1;
+
+  @include respond(tab-land){
+    letter-spacing: .1px;
+  }
 }
- 
+
 // font-family: 'Lato', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 

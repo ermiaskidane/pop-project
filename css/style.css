@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -16,6 +19,9 @@ body {
   box-sizing: border-box;
   padding: 0 2rem 2rem 2rem;
   background-color: #17181b; }
+  @media only screen and (max-width: 75em) {
+    body {
+      letter-spacing: .1px; } }
 
 .container {
   display: grid;
@@ -115,6 +121,12 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: all .4s; }
+  @media only screen and (max-width: 75em) {
+    .popup {
+      top: 11%; } }
+  @media only screen and (max-width: 37.5em) {
+    .popup {
+      left: 36%; } }
   .popup__genre {
     list-style: none;
     padding-left: 6px; }
@@ -140,6 +152,12 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: all .4s; }
+  @media only screen and (max-width: 75em) {
+    .sortby {
+      top: 11%; } }
+  @media only screen and (max-width: 37.5em) {
+    .sortby {
+      left: 55%; } }
   .sortby__items {
     list-style: none;
     padding-left: 6px; }
@@ -199,6 +217,9 @@ main {
     @media only screen and (max-width: 75em) {
       .header__list--1 {
         padding-right: 52vw; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__list--1 {
+        padding-right: 30vw; } }
   .header__list--item:hover .header__list--link {
     color: #fff; }
   .header__list--link {
@@ -234,6 +255,10 @@ main {
     .header__list--2 li:not(:last-child) {
       padding: 0 .4rem; }
     @media only screen and (max-width: 75em) {
+      .header__list--2 li:last-child {
+        display: inline-block;
+        padding: 0 .4rem; } }
+    @media only screen and (max-width: 75em) {
       .header__list--2 li:first-child {
         padding-top: 0.4rem; } }
   .header__list--link2 {
@@ -261,6 +286,11 @@ main {
     transition: all .2s; }
   .header__list--icon:hover {
     fill: #0944c0; }
+
+@media only screen and (max-width: 56.25em) {
+  .header__list--item:nth-child(3),
+  .header__list--item:nth-child(4) {
+    display: none; } }
 
 .user {
   display: grid;

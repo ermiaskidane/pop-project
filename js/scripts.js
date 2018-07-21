@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 // check wether jquery working or not
   // $('h3').click(function(){
