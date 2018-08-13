@@ -1,4 +1,5 @@
 const popAncher = document.querySelector('.pop-ancher');
+const sortAncher = document.querySelector('.sort-ancher');
 
 popAncher.addEventListener('click', () =>{
   const popup = document.querySelector('.popup');
