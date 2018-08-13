@@ -1,3 +1,14 @@
+const popAncher = document.querySelector('.pop-ancher');
+
+popAncher.addEventListener('click', () =>{
+  const popup = document.querySelector('.popup');
+  popup.classList.toggle('open');
+});
+
+
+
+
+
 $(document).ready(function(){
 // check wether jquery working or not
   // $('h3').click(function(){
