@@ -7,7 +7,10 @@ popAncher.addEventListener('click', () =>{
 });
 
 
-
+sortAncher.addEventListener('click', () =>{
+    const sortBy = document.querySelector('.sortby');
+    sortBy.classList.toggle('open');
+})
 
 
 $(document).ready(function(){
