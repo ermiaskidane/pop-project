@@ -15,6 +15,8 @@
   //     document.body.appendChild(content.cloneNode(true));
   //   }
   // })
+
+  ///////////  THIS IS FOR MOVIES /////////////////////
   var arr = [
     {
       img: 'img/mov-1.jpg',

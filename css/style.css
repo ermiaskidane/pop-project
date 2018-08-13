@@ -136,9 +136,10 @@ main {
       color: #aaa;
       font-weight: 500;
       letter-spacing: .6px; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible; }
+
+.open {
+  opacity: 1;
+  visibility: visible; }
 
 .sortby {
   background-color: #17181b;

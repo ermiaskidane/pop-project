@@ -1,3 +1,4 @@
+////////////// THIS IS FOR TV-SERIES //////////////////
 var array = [
   {
     img: 'img/tv_show/tv-sh1.jpg',
@@ -248,6 +249,6 @@ for (var i = 0; i < array.length; i++){
 
   var p3 = content.querySelectorAll('p');
   p3[2].innerHTML = tvshow.p3;
-  
+
   template.parentNode.appendChild(content);
 }
