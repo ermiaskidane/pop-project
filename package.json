@@ -1,7 +1,7 @@
 {
-  "name": "huddersfield_mission",
+  "name": "popcorn time",
   "version": "1.0.0",
-  "description": "static page for huddersfield_mission",
+  "description": "static page of popcorn time",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w"
