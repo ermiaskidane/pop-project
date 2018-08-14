@@ -1,4 +1,5 @@
-.sortby{
+.sortby,
+.sortby-tv--js{
   background-color: $color-primary-dark-1;
   width: 12%;
   height: auto;
@@ -33,8 +34,14 @@
     }
   }
 
-  &:target{
-    opacity: 1;
-    visibility: visible;
-  }
+  // &:target{
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
+}
+
+//  this been added using javascript in scripts.js
+.open{
+  opacity: 1;
+  visibility: visible;
 }
